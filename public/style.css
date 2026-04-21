@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: black;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    color: yellow;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: yellow;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70vh;
+    background-image: url("https://media.gettyimages.com/id/2556142/photo/the-british-rock-band-the-police-perform-onstage-circa-1980-left-to-right-sting-stewart-copeland.jpg?s=612x612&w=0&k=20&c=K4m6GSUTNwhcLzTAo7sstjG9ITDS3shdUm2g59WXz2Q=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: yellow;
+    padding-top: 40px;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.page-hero {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.page-hero h1 {
+    color: yellow;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.page-hero p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: rgb(220, 204, 30);
+    color: black;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/**/
+.chart-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 30px 60px;
+}
+
+.chart-block {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: #111;
+    padding: 30px;
+}
+
+.chart-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.chart-info {
+    flex: 1;
+}
+
+.chart-info h3 {
+    color: yellow;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.chart-info p {
+    color: #aaa;
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.chart-canvas-wrap {
+    flex: 1;
+}
+
+.chart-canvas-wrap canvas {
+    max-height: 280px;
+    width: 100% !important;
+}
+
+/**/
+#ad-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: gold;
+    width: 260px;
+    display: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.ad-header {
+    background: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ad-controls button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.ad-content {
+    padding: 15px;
+    color: black;
+}
+
+#showAdBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: gold;
+    display: none;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 8px 14px;
+    border: 1px solid gold;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .navbar { padding: 15px 20px; }
+    .chart-block, .chart-block.reverse { flex-direction: column; }
+    .projects { flex-direction: column; align-items: center; }
+}
