@@ -4,14 +4,47 @@
     <title>Sting — Contact</title>
     <link rel="stylesheet" href="/style.css">
     <style>
-        .form-section { display: flex; justify-content: center; padding: 60px 20px; }
-        .form-box { background: #111; padding: 40px; width: 100%; max-width: 520px; }
-        .form-box h2 { color: yellow; margin-bottom: 24px; }
-        .form-box label { display: block; color: #aaa; margin-bottom: 6px; }
-        .form-box input, .form-box textarea { width: 100%; padding: 10px; margin-bottom: 18px; background: #1a1a1a; border: 1px solid #333; color: white; }
-        .form-box textarea { height: 120px; resize: vertical; }
-        .form-box button { width: 100%; padding: 11px; background: yellow; color: black; font-weight: bold; border: none; cursor: pointer; }
-        .msg { padding: 12px; margin-bottom: 18px; font-weight: bold; background: #1a3a1a; color: #4cff4c; border: 1px solid #4cff4c; }
+        .form-section { 
+            display: flex; 
+            justify-content: center; 
+            padding: 60px 20px; }
+        .form-box { 
+            background: #111; 
+            padding: 40px; 
+            width: 100%; max-width: 520px;
+         }
+        .form-box h2 { 
+            color: yellow; 
+            margin-bottom: 24px; }
+        .form-box label { 
+            display: block; 
+            color: #aaa; 
+            margin-bottom: 6px; }
+        .form-box input, .form-box textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 18px; 
+            background: #1a1a1a; 
+            border: 1px solid #333; 
+            color: white; }
+        .form-box textarea { 
+            height: 120px; 
+            resize: vertical; }
+        .form-box button { 
+            width: 100%; 
+            padding: 11px; 
+            background: yellow; 
+            color: black; 
+            font-weight: bold; 
+            border: none; 
+            cursor: pointer; }
+        .msg { 
+            padding: 12px; 
+            margin-bottom: 18px; 
+            font-weight: bold; 
+            background: #1a3a1a; 
+            color: #4cff4c; 
+            border: 1px solid #4cff4c; }
     </style>
 </head>
 <body>

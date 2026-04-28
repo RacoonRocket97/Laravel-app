@@ -10,11 +10,23 @@ th{color:yellow}
 <body>
 @include('partials.navbar')
 <div class="wrap"><div class="box">
-<h2>Admin Panel — All Users</h2>
+<h2>{{ __('Admin Panel — All Users') }}</h2>
 <table>
-    <tr><th>ID</th><th>Name</th><th>Email</th><th>Role</th><th>Joined</th></tr>
+    <tr>
+        <th>{{ __('ID') }}</th>
+        <th>{{ __('Name') }}</th>
+        <th>{{ __('Email') }}</th>
+        <th>{{ __('Role') }}</th>
+        <th>{{ __('Joined') }}</th>
+    </tr>
     @foreach($users as $u)
-    <tr><td>{{ $u->id }}</td><td>{{ $u->name }}</td><td>{{ $u->email }}</td><td>{{ $u->role }}</td><td>{{ $u->created_at->format('Y-m-d') }}</td></tr>
+    <tr>
+        <td>{{ $u->id }}</td>
+        <td>{{ $u->name }}</td>
+        <td>{{ $u->email }}</td>
+        <td>{{ $u->role }}</td>
+        <td>{{ $u->created_at->format('Y-m-d') }}</td>
+    </tr>
     @endforeach
 </table>
 </div></div>

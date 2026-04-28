@@ -6,7 +6,7 @@
 <body>
 @include('partials.navbar')
 <div class="wrap"><div class="box">
-    <h2>VIP Lounge</h2>
-    <p>Welcome, VIP member. Enjoy exclusive behind-the-scenes footage, early ticket access, and private setlists from Sting's last world tour.</p>
+    <h2>{{ __('VIP Lounge') }}</h2>
+    <p>{{ __('Welcome, VIP member. Enjoy exclusive behind-the-scenes footage, early ticket access, and private setlists from Sting\'s last world tour.') }} </p>
 </div></div>
 </body></html>

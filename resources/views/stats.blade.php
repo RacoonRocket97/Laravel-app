@@ -11,16 +11,16 @@
 @include('partials.navbar')
 
 <section class="page-hero">
-    <h1>Sting — By The Numbers</h1>
-    <p>Five decades of music, tours, and cultural impact — visualized.</p>
+    <h1>{{ __('Sting — By The Numbers') }}</h1>
+    <p>{{ __('Five decades of music, tours, and cultural impact — visualized.') }}</p>
 </section>
 
 <div class="chart-section">
 
     <div class="chart-block">
         <div class="chart-info">
-            <h3>Tour Revenue by Year</h3>
-            <p>From his early Police reunions to the Broken Music tour, Sting has consistently sold out arenas worldwide. His 2011 Symphonicities tour redefined how rock and orchestral worlds collide, breaking revenue records across Europe and North America.</p>
+            <h3>{{ __('Tour Revenue by Year') }}</h3>
+            <p>{{ __('From his early Police reunions to the Broken Music tour, Sting has consistently sold out arenas worldwide. His 2011 Symphonicities tour redefined how rock and orchestral worlds collide, breaking revenue records across Europe and North America.') }}</p>
         </div>
         <div class="chart-canvas-wrap">
             <canvas id="barChart"></canvas>
@@ -29,8 +29,8 @@
 
     <div class="chart-block reverse">
         <div class="chart-info">
-            <h3>Album Sales Share</h3>
-            <p>Brand New Day remains his commercial peak, propelled by Grammy wins and global radio dominance. Ten Summoner's Tales is widely regarded his artistic masterpiece — critics and fans aligning on a rare crossover of depth and accessibility.</p>
+            <h3>{{ __('Album Sales Share') }}</h3>
+            <p>{{ __('Brand New Day remains his commercial peak, propelled by Grammy wins and global radio dominance. Ten Summoner\'s Tales is widely regarded his artistic masterpiece — critics and fans aligning on a rare crossover of depth and accessibility.') }}</p>
         </div>
         <div class="chart-canvas-wrap">
             <canvas id="pieChart"></canvas>
@@ -39,8 +39,8 @@
 
     <div class="chart-block">
         <div class="chart-info">
-            <h3>Artistry Across Disciplines</h3>
-            <p>Few artists command such breadth. Sting studied literature at university, mastered the lute, acted in films, and still holds one of the most recognizable voices in recorded history. His stage presence alone has become the subject of academic study.</p>
+            <h3>{{ __('Artistry Across Disciplines') }}</h3>
+            <p>{{ __('Few artists command such breadth. Sting studied literature at university, mastered the lute, acted in films, and still holds one of the most recognizable voices in recorded history. His stage presence alone has become the subject of academic study.') }}</p>
         </div>
         <div class="chart-canvas-wrap">
             <canvas id="polarChart"></canvas>
@@ -49,8 +49,8 @@
 
     <div class="chart-block reverse">
         <div class="chart-info">
-            <h3>Monthly Streams in 2024</h3>
-            <p>The streaming era has brought Sting to entirely new generations. Monthly listeners surged following a viral moment in March and peaked in December with the release of his anniversary edition — a legacy that refuses to plateau.</p>
+            <h3>{{ __('Monthly Streams in 2024') }}</h3>
+            <p>{{ __('The streaming era has brought Sting to entirely new generations. Monthly listeners surged following a viral moment in March and peaked in December with the release of his anniversary edition — a legacy that refuses to plateau.') }}</p>
         </div>
         <div class="chart-canvas-wrap">
             <canvas id="lineChart"></canvas>

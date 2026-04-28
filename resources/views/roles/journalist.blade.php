@@ -6,8 +6,8 @@
 <body>
 @include('partials.navbar')
 <div class="wrap"><div class="box">
-    <h2>Press Room</h2>
+    <h2>{{ __('Press Room') }}</h2>
     <p>Exclusive press materials, high-res photos, and official statements for accredited journalists. Download the press kit below.</p>
-    <p style="margin-top:20px;color:#555;">[ Press kit download would go here ]</p>
+    <p style="margin-top:20px;color:#555;">{{ __('Press kit download would go here') }}</p>
 </div></div>
 </body></html>

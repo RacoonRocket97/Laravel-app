@@ -5,11 +5,14 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LocaleController; // Language switcher
 
 // Public
 Route::get('/',             fn() => view('home'));
 Route::get('/stats',        fn() => view('stats'));
 Route::get('/access-denied', [DashboardController::class, 'accessDenied']);
+Route::get('/lang/{locale}', [LocaleController::class, 'switch'])->name('lang.switch'); // Language switcher
+
 
 // Auth
 Route::get('/login',    [AuthController::class, 'showLogin']);

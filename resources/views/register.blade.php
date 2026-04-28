@@ -66,36 +66,36 @@
 
 <section class="form-section">
     <div class="form-box">
-        <h2>Create Account</h2>
+        <h2>{{ __('Create Account') }}</h2>
 
         <form method="POST" action="/register">
             @csrf
 
-            <label>Username</label>
-            <input type="text" name="name" placeholder="Enter username" value="{{ old('name') }}">
+            <label>{{ __('Username') }}</label>
+            <input type="text" name="name" placeholder="{{ __('Enter username') }}" value="{{ old('name') }}">
             @error('name')
                 <p style="color:red;font-size:0.85rem;margin-top:-12px;margin-bottom:10px;">{{ $message }}</p>
             @enderror
 
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Enter email" value="{{ old('email') }}">
+            <label>{{ __('Email') }}</label>
+            <input type="email" name="email" placeholder="{{ __('Enter email') }}" value="{{ old('email') }}">
             @error('email')
                 <p style="color:red;font-size:0.85rem;margin-top:-12px;margin-bottom:10px;">{{ $message }}</p>
             @enderror
 
-            <label>Password</label>
-            <input type="password" name="password" placeholder="Enter password">
+            <label>{{ __('Password') }}</label>
+            <input type="password" name="password" placeholder="{{ __('Enter password') }}">
             @error('password')
                 <p style="color:red;font-size:0.85rem;margin-top:-12px;margin-bottom:10px;">{{ $message }}</p>
             @enderror
 
-            <label>Confirm Password</label>
-            <input type="password" name="password_confirmation" placeholder="Repeat password">
+            <label>{{ __('Confirm Password') }}</label>
+            <input type="password" name="password_confirmation" placeholder="{{ __('Repeat password') }}">
 
-            <button type="submit">Register</button>
+            <button type="submit">{{ __('Register') }}</button>
         </form>
 
-        <div class="link">Already have an account? <a href="/login">Log in</a></div>
+        <div class="link">Already have an account? <a href="/login">{{ __('Log in') }}</a></div>
     </div>
 </section>
 

@@ -77,7 +77,7 @@
 
 <section class="form-section">
     <div class="form-box">
-        <h2>Log In</h2>
+        <h2>{{ __('Log In') }}</h2>
 
         @if($message)
             <div class="msg {{ $message_type }}">{{ $message }}</div>
@@ -89,17 +89,17 @@
 
         <form method="POST" action="/login">
             @csrf
-            <label>Login</label>
-            <input type="text" name="login" placeholder="Enter email or username">
+            <label>{{ __('Login') }}</label>
+            <input type="text" name="login" placeholder="{{ __('Enter email or username') }}" value="{{ old('login') }}" required>
 
-            <label>Password</label>
-            <input type="password" name="password" placeholder="Enter password">
+            <label>{{ __('Password') }}</label>
+            <input type="password" name="password" placeholder="{{ __('Enter password') }}" required>
 
-            <button type="submit">Log In</button>
+            <button type="submit">{{ __('Log In') }}</button>
         </form>
 
         <div class="link">
-            Don't have an account? <a href="/register">Register</a>
+            Don't have an account? <a href="/register">{{ __('Register') }}</a>
         </div>
     </div>
 </section>

@@ -6,7 +6,7 @@
 <body>
 @include('partials.navbar')
 <div class="wrap"><div class="box">
-    <h2>Fan Zone</h2>
-    <p>Share your love for Sting. Upload your fan art and photos, or <a href="/contact">send us a message</a>.</p>
+    <h2>{{ __('Fan Zone') }}</h2>
+    <p>Share your love for Sting. Upload your fan art and photos, or <a href="/contact">{{ __('send us a message') }}</a>.</p>
 </div></div>
 </body></html>

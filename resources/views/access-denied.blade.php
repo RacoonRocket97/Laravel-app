@@ -14,8 +14,8 @@
 @include('partials.navbar')
 <div class="denied-wrap">
     <h1>403</h1>
-    <p>You don't have permission to access this page.</p>
-    <a href="/dashboard">Back to Dashboard</a>
+    <p>{{ __('You don\'t have permission to access this page.') }}</p>
+    <a href="/dashboard">{{ __('Back to Dashboard') }}</a>
 </div>
 </body>
 </html>

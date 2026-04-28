@@ -21,28 +21,28 @@
 @include('partials.navbar')
 <div class="dashboard-wrap">
     <div class="dashboard-box">
-        <h2>Welcome, {{ $user->name }}</h2>
+        <h2>{{ __('Welcome') }}, {{ $user->name }}</h2>
         <span class="role-badge">{{ strtoupper(str_replace('_', ' ', $user->role)) }}</span>
         <p>{{ $user->email }}</p>
 
         <div class="nav-links">
-            <a href="/upload">My Uploads</a>
-            <a href="/contact">Contact</a>
-            <a href="/fanzone">Fan Zone</a>
+            <a href="/upload">{{ __('My Uploads') }}</a>
+            <a href="/contact">{{ __('Contact') }}</a>
+            <a href="/fanzone">{{ __('Fan Zone') }}</a>
             @if(in_array($user->role, ['admin', 'vip_member']))
-                <a href="/vip">VIP Lounge</a>
+                <a href="/vip">{{ __('VIP Lounge') }}</a>
             @endif
             @if(in_array($user->role, ['admin', 'journalist']))
-                <a href="/press">Press Room</a>
+                <a href="/press">{{ __('Press Room') }}</a>
             @endif
             @if($user->role === 'admin')
-                <a href="/admin">Admin Panel</a>
+                <a href="/admin">{{ __('Admin Panel') }}</a>
             @endif
         </div>
 
         <form class="logout-form" method="POST" action="/logout">
             @csrf
-            <button type="submit">Log Out</button>
+            <button type="submit">{{ __('Log Out') }}</button>
         </form>
     </div>
 </div>
