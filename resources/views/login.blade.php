@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sting — Login</title>
+    <title>Sting — {{ __('Login') }}</title>
     <link rel="stylesheet" href="/style.css">
     <style>
         .form-section {
@@ -99,7 +99,7 @@
         </form>
 
         <div class="link">
-            Don't have an account? <a href="/register">{{ __('Register') }}</a>
+            {{ __("Don't have an account?") }} <a href="/register">{{ __('Register') }}</a>
         </div>
     </div>
 </section>

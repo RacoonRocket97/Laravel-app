@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sting — By The Numbers</title>
+    <title>{{ __('Sting — By The Numbers') }}</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     <link rel="stylesheet" href="/style.css">
@@ -107,7 +107,7 @@
             datasets: [{
                 data: [95, 80, 92, 75, 70, 98],
                 backgroundColor: [
-                    "rgba(255,15,0,0.6)",
+                    "rgba(255,215,0,0.6)",
                     "rgba(255,99,132,0.6)",
                     "rgba(54,162,235,0.6)",
                     "rgba(75,192,192,0.6)",

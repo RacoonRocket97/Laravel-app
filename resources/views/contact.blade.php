@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sting — Contact</title>
+    <title>Sting — {{ __('Contact') }}</title>
     <link rel="stylesheet" href="/style.css">
     <style>
         .form-section { 
@@ -51,7 +51,7 @@
 @include('partials.navbar')
 <section class="form-section">
     <div class="form-box">
-        <h2>Contact Us</h2>
+        <h2>{{ __('Contact Us') }}</h2>
 
         @if(session('success'))
             <div class="msg">{{ session('success') }}</div>
@@ -59,19 +59,19 @@
 
         <form method="POST" action="/contact">
             @csrf
-            <label>Name</label>
+            <label>{{ __('Name') }}</label>
             <input type="text" name="name" value="{{ old('name') }}" required>
             @error('name')<p style="color:red;margin-bottom:8px;">{{ $message }}</p>@enderror
 
-            <label>Email</label>
+            <label>{{ __('Email') }}</label>
             <input type="email" name="email" value="{{ old('email') }}" required>
             @error('email')<p style="color:red;margin-bottom:8px;">{{ $message }}</p>@enderror
 
-            <label>Message</label>
+            <label>{{ __('Message') }}</label>
             <textarea name="message" required>{{ old('message') }}</textarea>
             @error('message')<p style="color:red;margin-bottom:8px;">{{ $message }}</p>@enderror
 
-            <button type="submit">Send Message</button>
+            <button type="submit">{{ __('Send Message') }}</button>
         </form>
     </div>
 </section>

@@ -5,7 +5,7 @@
         <a href="#">{{ __('Gallery') }}</a>
         <a href="#">{{ __('Projects') }}</a>
         <a href="/stats">{{ __('Stats') }}</a>
-        <a href="#">{{ __('Contact') }}</a>
+        <a href="/contact">{{ __('Contact') }}</a>
         @auth
             <a href="/dashboard">{{ __('Dashboard') }}</a>
         @else
