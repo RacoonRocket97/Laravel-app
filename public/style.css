@@ -10,6 +10,7 @@ body {
     color: white;
 }
 
+/* NAVBAR */ 
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -17,6 +18,7 @@ body {
     padding: 15px 40px;
     background: black;
     border-bottom: 1px solid #222;
+    position: relative;
 }
 
 .logo {
@@ -41,6 +43,41 @@ body {
     color: yellow;
 }
 
+/* hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: yellow;
+}
+
+.lang-switcher {
+    display: flex;
+    gap: 8px;
+}
+
+.lang-switcher a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.lang-switcher a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+/*Hero section   */
 .hero {
     display: flex;
     justify-content: center;
@@ -55,16 +92,19 @@ body {
     padding-top: 40px;
 }
 
+/* vw-based responsive text using clamp() */
 .hero-text h1 {
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
     margin-bottom: 10px;
 }
 
 .hero-text p {
     color: #ddd;
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 2vw, 1rem);
 }
 
+/* PAGE HERO
+   */
 .page-hero {
     text-align: center;
     padding: 50px 20px 20px;
@@ -72,7 +112,7 @@ body {
 
 .page-hero h1 {
     color: yellow;
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 4vw, 2rem); /* METHOD 4 */
     margin-bottom: 10px;
 }
 
@@ -81,23 +121,27 @@ body {
     font-size: 0.9rem;
 }
 
+/*cards */
 .projects {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 40px;
+    flex-wrap: wrap;
 }
 
+/* method 2 */
 .card {
     background: rgb(220, 204, 30);
     color: black;
     padding: 30px;
-    width: 200px;
+    width: 28%; /* was 200px */
+    min-width: 150px;
     text-align: center;
     font-weight: bold;
 }
 
-/**/
+/* charts */
 .chart-section {
     display: flex;
     flex-direction: column;
@@ -139,12 +183,14 @@ body {
     flex: 1;
 }
 
+/* method 3*/
 .chart-canvas-wrap canvas {
+    max-width: 100%;
     max-height: 280px;
     width: 100% !important;
 }
 
-/**/
+/*ad banner*/
 #ad-banner {
     position: fixed;
     bottom: 20px;
@@ -193,8 +239,83 @@ body {
     cursor: pointer;
 }
 
+/* method 3 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* method 5*/
+
+/* Tablet */
+@media (max-width: 900px) {
+    .chart-block,
+    .chart-block.reverse {
+        flex-direction: column;
+    }
+
+    .chart-section {
+        padding: 0 20px 40px;
+    }
+}
+
+/* Mobile */
 @media (max-width: 700px) {
-    .navbar { padding: 15px 20px; }
-    .chart-block, .chart-block.reverse { flex-direction: column; }
-    .projects { flex-direction: column; align-items: center; }
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 10px;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        border-top: 1px solid #222;
+        font-size: 1rem;
+    }
+
+    .lang-switcher {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .projects {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 50vh;
+        padding-top: 20px;
+    }
+
+    #ad-banner {
+        width: 90%; 
+        right: 5%;
+        left: 5%;
+    }
+
+    .chart-block {
+        padding: 20px;
+    }
 }

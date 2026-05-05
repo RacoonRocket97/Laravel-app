@@ -3,6 +3,7 @@
 <head>
     <title>Sting — Dashboard</title>
     <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .dashboard-wrap { max-width: 800px; margin: 60px auto; padding: 0 20px; }
         .dashboard-box { background: #111; padding: 40px; }

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head><title>Press Room</title><link rel="stylesheet" href="/style.css">
+<head>
+    <title>Press Room</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>.wrap{max-width:800px;margin:60px auto;padding:0 20px}.box{background:#111;padding:40px}h2{color:yellow;margin-bottom:16px}p{color:#aaa;line-height:1.7}</style>
 </head>
 <body>
