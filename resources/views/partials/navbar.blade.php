@@ -11,9 +11,11 @@
 
     <div class="menu" id="nav-menu">
         <a href="/">{{ __('Home') }}</a>
-        <a href="#">{{ __('Gallery') }}</a>
-        <a href="#">{{ __('Projects') }}</a>
         <a href="/stats">{{ __('Stats') }}</a>
+        
+        <a href="{{ route('social.media') }}">{{ __('Social Media') }}</a>
+        <a href="{{ route('terms') }}">{{ __('Terms & Conditions') }}</a>
+        
         <a href="/contact">{{ __('Contact') }}</a>
         @auth
             <a href="/dashboard">{{ __('Dashboard') }}</a>

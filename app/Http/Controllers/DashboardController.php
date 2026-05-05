@@ -16,19 +16,38 @@ class DashboardController extends Controller {
         return view('roles.admin', compact('users'));
     }
 
-    public function pressRoom() {
-        return view('roles.journalist');
-    }
-
-    public function vipLounge() {
-        return view('roles.vip');
-    }
-
-    public function fanZone() {
-        return view('roles.fan');
-    }
-
     public function accessDenied() {
         return view('access-denied');
+    }
+
+    // --- New Methods ---
+
+    public function priceList() {
+        // All authenticated users can see this
+        return view('price-list');
+    }
+
+    public function vipPriceList() {
+        // Only VIP and Admin
+        if (!in_array(Auth::user()->role, ['vip', 'admin'])) {
+            return redirect()->route('access.denied');
+        }
+        return view('vip-price-list'); // Matched your specific file name
+    }
+
+    public function faq() {
+        // Only VIP and Admin
+        if (!in_array(Auth::user()->role, ['vip', 'admin'])) {
+            return redirect()->route('access.denied');
+        }
+        return view('faq');
+    }
+
+    public function biography() {
+        // Only VIP and Admin
+        if (!in_array(Auth::user()->role, ['vip', 'admin'])) {
+            return redirect()->route('access.denied');
+        }
+        return view('biography');
     }
 }
