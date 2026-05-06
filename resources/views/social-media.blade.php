@@ -34,56 +34,48 @@
 
     <div class="social-grid">
         <div class="social-card">
-            <div class="social-icon">📘</div>
             <div class="social-name">Facebook</div>
             <div class="social-handle">@officialsting</div>
             <a href="https://facebook.com/sting" target="_blank" class="social-link">{{ __('Follow') }}</a>
         </div>
 
         <div class="social-card">
-            <div class="social-icon">📷</div>
             <div class="social-name">Instagram</div>
             <div class="social-handle">@theofficialsting</div>
             <a href="https://instagram.com/theofficialsting" target="_blank" class="social-link">{{ __('Follow') }}</a>
         </div>
 
         <div class="social-card">
-            <div class="social-icon">🐦</div>
             <div class="social-name">Twitter</div>
             <div class="social-handle">@OfficialSting</div>
             <a href="https://twitter.com/officialsting" target="_blank" class="social-link">{{ __('Follow') }}</a>
         </div>
 
         <div class="social-card">
-            <div class="social-icon">▶️</div>
             <div class="social-name">YouTube</div>
             <div class="social-handle">Sting</div>
             <a href="https://youtube.com/sting" target="_blank" class="social-link">{{ __('Subscribe') }}</a>
         </div>
 
         <div class="social-card">
-            <div class="social-icon">🎵</div>
             <div class="social-name">Spotify</div>
             <div class="social-handle">Sting</div>
             <a href="https://open.spotify.com/artist/0Ty63ceoRnnJKVEYP0VQpk" target="_blank" class="social-link">{{ __('Listen') }}</a>
         </div>
 
         <div class="social-card">
-            <div class="social-icon">🎧</div>
             <div class="social-name">Apple Music</div>
             <div class="social-handle">Sting</div>
             <a href="https://music.apple.com/artist/sting" target="_blank" class="social-link">{{ __('Listen') }}</a>
         </div>
 
         <div class="social-card">
-            <div class="social-icon">🎬</div>
             <div class="social-name">TikTok</div>
             <div class="social-handle">@sting</div>
             <a href="https://tiktok.com/@sting" target="_blank" class="social-link">{{ __('Follow') }}</a>
         </div>
 
         <div class="social-card">
-            <div class="social-icon">💼</div>
             <div class="social-name">LinkedIn</div>
             <div class="social-handle">Sting</div>
             <a href="https://linkedin.com/in/sting" target="_blank" class="social-link">{{ __('Connect') }}</a>
