@@ -16,7 +16,6 @@ Route::get('/lang/{locale}', [LocaleController::class, 'switch'])->name('lang.sw
 // New Public Pages (Navbar)
 Route::view('/social-media', 'social-media')->name('social.media');
 Route::view('/terms-and-conditions', 'terms-and-conditions')->name('terms');
-
 // --- Guest/Auth Routes ---
 Route::middleware('guest')->group(function () {
     Route::get('/login',     [AuthController::class, 'showLogin'])->name('login');

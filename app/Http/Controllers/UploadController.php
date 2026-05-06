@@ -10,7 +10,10 @@ use Illuminate\Support\Facades\Storage;
 class UploadController extends Controller {
 
     public function index() {
-        $uploads = Auth::user()->uploads()->latest()->get();
+        // CHANGED: Fetch all uploads instead of just the logged-in user's uploads.
+        // Eager loading 'with("user")' ensures we can easily display the uploader's name.
+        $uploads = Upload::with('user')->latest()->get();
+        
         return view('upload', compact('uploads'));
     }
 
