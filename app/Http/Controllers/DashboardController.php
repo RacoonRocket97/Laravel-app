@@ -20,23 +20,19 @@ class DashboardController extends Controller {
         return view('access-denied');
     }
 
-    // --- New Methods ---
 
     public function priceList() {
-        // All authenticated users can see this
         return view('price-list');
     }
 
     public function vipPriceList() {
-        // Only VIP and Admin
         if (!in_array(Auth::user()->role, ['vip', 'admin'])) {
             return redirect()->route('access.denied');
         }
-        return view('vip-price-list'); // Matched your specific file name
+        return view('vip-price-list'); 
     }
 
     public function faq() {
-        // Only VIP and Admin
         if (!in_array(Auth::user()->role, ['vip', 'admin'])) {
             return redirect()->route('access.denied');
         }
@@ -44,7 +40,6 @@ class DashboardController extends Controller {
     }
 
     public function biography() {
-        // Only VIP and Admin
         if (!in_array(Auth::user()->role, ['vip', 'admin'])) {
             return redirect()->route('access.denied');
         }

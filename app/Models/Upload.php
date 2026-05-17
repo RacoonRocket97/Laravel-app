@@ -10,7 +10,7 @@ class Upload extends Model {
         'filename',
         'original_name',
         'path',
-        'description' // NEW
+        'description' 
     ];
 
     public function user() {

@@ -13,10 +13,8 @@
         .bio-section h2 { color: yellow; margin-bottom: 20px; font-size: 1.5rem; }
         .bio-section p { color: #aaa; line-height: 1.8; margin-bottom: 15px; }
         
-        /* Updated image styling */
         .bio-image-container { margin: 20px 0; text-align: center; background: #000; padding: 10px; border: 1px solid #333; }
         .bio-img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
-        /* Ensuring the main wide portrait looks good */
         .main-portrait { max-height: 500px; object-fit: cover; width: 100%; }
 
         .timeline { border-left: 3px solid yellow; padding-left: 30px; margin-left: 20px; }
